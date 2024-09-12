@@ -3,27 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iframe Redirect Example</title>
+    <title>iFrame Example</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
         iframe {
-            width: 100vw;
-            height: 100vh;
-            border: none;
+            border: 1px solid #ccc;
+            width: 600px;
+            height: 400px;
         }
     </style>
 </head>
 <body>
-    <iframe id="myIframe" src="about:blank"></iframe>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var iframe = document.getElementById('myIframe');
-            iframe.src = 'https://www.jungle.pages.dev';
-        });
-    </script>
+    <h1>Embedding an iFrame</h1>
+    <p>Below is an example of an iframe embedding an external webpage:</p>
+    
+    <iframe src="https://www.jungle.pages.dev" title="Example Site"></iframe>
+    
+    <p>In this example, the iframe is displaying the content from Example.com.</p>
 </body>
 </html>
